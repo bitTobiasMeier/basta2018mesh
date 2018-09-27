@@ -18,7 +18,7 @@ application:
                 - name: ASPNETCORE_URLS
                   value: http://+:20000
                 - name: RestaurantServiceName
-                  value: restaurantservice
+                  value: restaurantservice.bastademo2018
                 - name: RestaurantServicePort
                   value: 20004
 #                - name: ApplicationInsights:InstrumentationKey
