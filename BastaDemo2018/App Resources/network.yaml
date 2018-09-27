@@ -1,0 +1,14 @@
+## Network definition ##
+network:
+  schemaVersion: 1.0.0-preview1
+  name: BastaDemo2018Network
+  properties:
+    description: BastaDemo2018Network description.
+    addressPrefix: 10.0.0.4/22
+    ingressConfig:
+      layer4:
+        - name: PlatformIngress
+          publicPort: 20000
+          applicationName: BastaDemo2018
+          serviceName: Platform
+          endpointName: PlatformListener

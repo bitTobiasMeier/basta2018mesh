@@ -1,0 +1,28 @@
+﻿## Service definition ##
+application:
+  schemaVersion: 1.0.0-preview1
+  name: BastaDemo2018
+  properties:
+    services:
+      - name: RestaurantService
+        properties:
+          description: RestaurantService description.
+          osType: Windows
+          codePackages:
+            - name: RestaurantService
+              image: restaurantservice:dev
+              endpoints:
+                - name: RestaurantServiceListener
+                  port: 20004
+              environmentVariables:
+                - name: ASPNETCORE_URLS
+                  value: http://+:20004
+#                - name: ApplicationInsights:InstrumentationKey
+#                  value: "<Place AppInsights key here, or reference it via a secret>"
+              resources:
+                requests:
+                  cpu: 0.5
+                  memoryInGB: 1
+          replicaCount: 1
+          networkRefs:
+            - name: BastaDemo2018Network

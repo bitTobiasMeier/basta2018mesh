@@ -1,0 +1,20 @@
+## Visual Studio SFApp Publish Profile ##
+vsSFAppPublishProfile:
+  schemaVersion: 1.0.0-preview1
+resourceGroupName: BastaDemo2018-rg
+subscription:
+  id: f80c2805-6b0b-4d89-828e-fbf294eb4fe0
+  name: tobiasmeierbridgingit_personal
+  tenant:
+    id: 78341e36-098a-4db3-97a1-ecfdd1f63124
+    uniqueId: cfedd4c0-c2f7-4e15-8d78-c158206f2fc6
+location:
+  name: westeurope
+  displayName: West Europe
+containerRegistry:
+  serverName: basta2018sfmeshdemoacr.azurecr.io
+  userName: BASTA2018SFMeshDemoacr
+  resourceId: /subscriptions/3f1e9640-b1b2-4964-b213-e9ba83f9b5d9/resourceGroups/sfbastademo/providers/Microsoft.ContainerRegistry/registries/BASTA2018SFMeshDemoacr
+  tenant:
+    id: 967a3728-d849-41ef-9a32-f1935ccc293d
+    uniqueId: e8cdb30f-5cf4-4b22-b2df-72fbca05e2a5

@@ -1,0 +1,5 @@
+﻿application:
+  schemaVersion: 1.0.0-preview1
+  name: BastaDemo2018
+  properties:
+    description: BastaDemo2018 description.
